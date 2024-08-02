@@ -11,7 +11,8 @@ import SwiftUI
 struct StockToolsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
+                .environmentObject(AppState())
         }
     }
 }
